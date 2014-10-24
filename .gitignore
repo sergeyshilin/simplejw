@@ -16,3 +16,6 @@ hs_err_pid*
 /build/
 /SimpleApp-war/build/
 /SimpleApp-war/dist/
+/nbproject/private/
+/SimpleApp-war/nbproject/private/
+/SimpleApp-ejb/nbproject/private/
