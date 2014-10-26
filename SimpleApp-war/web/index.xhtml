@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     </h:head>
     <h:body>
-        #{userBean.user.name}
+        <h:form>
+            <h:inputText value="#{userBean.user.name}"></h:inputText>
+            <h:commandButton action="welcome" value="submit"></h:commandButton>
+        </h:form>
     </h:body>
 </html>

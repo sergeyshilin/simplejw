@@ -7,6 +7,7 @@ package com.simpleapp.user;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import java.io.Serializable;
 
 /**
  *
@@ -14,13 +15,17 @@ import javax.ejb.Stateless;
  */
 
 @Stateless
-public class User {
-    
+public class User implements Serializable {
     private String name;
 
-    public void initUser(String name) {
+    public User() {
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
-    
+    public String getName() {
+        return this.name;
+    }
 }
